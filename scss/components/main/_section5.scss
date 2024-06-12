@@ -1,0 +1,17 @@
+.section5-div-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 94px 0px;
+
+    &__h2 {
+        font-size: 36px;
+    }
+
+    &__div-layout {
+        display: flex;
+    justify-content: center;
+    gap: 30px;
+    }
+}

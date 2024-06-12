@@ -1,0 +1,34 @@
+@import '../colors';
+
+.div-general-section1-main {
+    padding: 0px 22px 50px;
+    margin: 0 auto;
+    gap: 9px;
+
+    &__div-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+    }
+
+    &__button {
+            color: map-get($colors, 'color-standart-text');
+            border: map-get($colors, 'color-h1-address');
+            transition-property: background-color, color;
+            transition-duration: 0.6s;
+            transition-timing-function: ease;
+        
+        &:hover {
+            background-color: map-get($colors, 'color-a-button');
+            color: #FFF;
+        }
+    }
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+}

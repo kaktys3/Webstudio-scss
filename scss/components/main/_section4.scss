@@ -1,0 +1,41 @@
+@import '../colors';
+
+.section4-div-general {
+    display: flex;
+    flex-direction: column;
+    padding: 94px 215px;
+    background: map-get($colors, 'color-h1-address');
+    gap: 50px;
+}
+
+.personnel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.personnel-user {
+    &__img {
+        width: 270px;
+        height: 260px;
+    }
+
+    &__information1 {
+        background-color: map-get($colors, 'color-h1-address');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__information1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px 16px;
+    }
+}
+
+.layout-icon-img {
+    display: flex;
+}

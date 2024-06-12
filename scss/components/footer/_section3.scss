@@ -1,0 +1,46 @@
+@import '../colors';
+
+.h5 {
+    color: map-get($colors, 'color-h1-address');
+    padding: 0px 0px 20px 0px;
+}
+
+.footer-section3-div-general {
+    display: flex;
+    padding: 0px 0px 10px 0px;
+
+    &__term-of-entry {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: map-get($colors, 'color-h1-address');
+        background-color: map-get($colors, 'color-a-button');
+        border-radius: 5px;
+
+        &:focus:hover {
+            animation-name: button2;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    }
+    
+    @keyframes button2 {
+        0% {
+            background-color: map-get($colors, 'color-a-button');
+        }
+    
+        100% {
+            background-color: map-get($colors, 'color-h1-address');
+            
+        }
+    }
+}

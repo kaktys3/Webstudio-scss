@@ -1,0 +1,59 @@
+@import '../colors';
+
+.div-general-section2-main {
+    padding: 0px 22px 50px;
+    margin: 0 auto;
+    gap: 9px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+}
+
+.div-binding-section2-main {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    grid-template-rows:
+        repeat(3, 1fr);
+    grid-auto-flow: row;
+    gap: 30px;
+}
+
+.div-card-section2-main {
+    border: 1px solid map-get($colors, 'color-h1-address');
+    width: 370px;
+
+    &:hover {
+        box-shadow: 0px 3px 7px map-get($colors, 'color-standart-text');
+    }
+
+    &__description {
+        padding: 20px 24px;
+        background-color: map-get($colors,  'color-h1-address');
+    }
+
+    &__img {
+        width: 370px;
+        height: 294px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    &__img::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(/img/Property.1=Frame2\ .1.png);
+        transform: translate(0, 100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__img:hover::before {
+        transform: translate(0, 0);
+    }
+}

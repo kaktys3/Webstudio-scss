@@ -1,0 +1,91 @@
+@import '../colors';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 44px;
+    color: map-get($colors, 'color-h1-address');
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0px;
+}
+
+h2 {
+    color: map-get($colors, 'color-standart-text');
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin: 0px;
+}
+
+h3 {
+    color: map-get($colors, 'color-standart-text');
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    padding: 0px 0px 2px;
+    margin: 0px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: map-get($colors, 'color-standart-text');
+    margin: 0px;
+    padding: 30px 0px 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: map-get($colors, 'color-p');
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colors, 'color-standart-text');
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin: 0px;
+}
+
+a:focus {
+    color: map-get($colors, 'color-a-button');
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+input {
+    width: 358px;
+    height: 50px;
+    background-color: map-get($colors, 'color-input');
+}

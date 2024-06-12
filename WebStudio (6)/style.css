@@ -1,0 +1,212 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-envelope {
+  width: 1.3330078125em;
+  width: 16px;
+  height: 12px;
+  color: #757575;
+  transition-property: color;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.icon-envelope:hover {
+  color: #2196F3;
+}
+
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+  padding: 25px 102px;
+  background: #F5F4FA;
+}
+
+.icon-clock {
+  width: 66.96px;
+  height: 70px;
+  padding: 25px 102px;
+  background: #F5F4FA;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-clock:hover {
+  color: #2196F3;
+}
+
+.icon-group-1 {
+  width: 41px;
+  height: 46.7px;
+  padding: 23px 65px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+  transition-property: color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-group-1:hover {
+  color: #2196F3;
+  border: 1px solid#2196F3;
+}
+
+.icon-group-2 {
+  width: 40px;
+  height: 52px;
+  padding: 20px 65px;
+  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
+  border-radius: 4px;
+  transition-property: color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-group-2:hover {
+  color: #2196F3;
+  border: 1px solid#2196F3;
+}
+
+.icon-group-3 {
+  width: 43.46px;
+  height: 41.18px;
+  padding: 25px 62px;
+  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
+  border-radius: 4px;
+  transition-property: color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-group-3:hover {
+  color: #2196F3;
+  border: 1px solid#2196F3;
+}
+
+.icon-group-4 {
+  width: 84.44px;
+  height: 40.62px;
+  padding: 25px 43px;
+  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
+  border-radius: 4px;
+  transition-property: color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-group-4:hover {
+  color: #2196F3;
+  border: 1px solid#2196F3;
+}
+
+.icon-group-5 {
+  width: 62.54px;
+  height: 45.43px;
+  padding: 23px 64px;
+  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
+  border-radius: 4px;
+  transition-property: color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-group-5:hover {
+  color: #2196F3;
+  border: 1px solid#2196F3;
+}
+
+.icon-group-6 {
+  width: 93.79px;
+  height: 43.93px;
+  padding: 24px 38px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+  transition-property: color, border;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-group-6:hover {
+  color: #2196F3;
+  border: 1px solid#2196F3;
+}
+
+.icon-antenna {
+  width: 65.32px;
+  height: 70px;
+  padding: 25px 102px;
+  background: #F5F4FA;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.icon-a.icon-antenna {
+  color: #2196F3;
+}
+
+.icon-smartphone {
+  width: 0.625em;
+  width: 10px;
+  height: 16px;
+  color: #757575;
+  transition-property: color;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.icon-smartphone:hover {
+  color: #2196F3;
+}
+
+.icon-diagram-1-2 {
+  width: 70px;
+  height: 70px;
+  padding: 25px 102px;
+  background: #F5F4FA;
+}
+
+.icon-facebook {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.icon-twitter {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
+  color: white;
+}

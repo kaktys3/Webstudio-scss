@@ -1,0 +1,26 @@
+@import '../colors';
+
+.footer-section2-div-general {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0px;
+
+    &__socisl-netwotka-img {
+        gap: 10px;
+        display: flex;
+    }
+
+    &__icon {
+        background-color: map-get($colors, 'color-icon');
+    padding: 14px;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    transition-delay: 0;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: map-get($colors, 'color-a-button');
+    }
+    }
+}

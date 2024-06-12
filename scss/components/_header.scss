@@ -1,0 +1,83 @@
+@import '../colors';
+
+.heder-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* навігаційна система */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    color: map-get($colors, 'color-standart-text');
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.08px;
+
+    &__link {
+        padding: 28px 0px;
+        transition-property: color, border;
+        transition-timing-function: linear;
+        transition-delay: 0;
+
+        &:hover {
+            color: map-get($colors, 'color-a-button');
+            border-bottom: 5px solid map-get($colors, 'color-a-button');
+            border-radius: 3px;
+        }
+    }
+}
+
+
+
+.logo-link {
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+
+    .span {
+        color: map-get($colors, 'color-a-button');
+        font-family: Raleway;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+    }
+}
+
+.address {
+    display: flex;
+    gap: 50px;
+
+    &__div-icon-a {
+        display: flex;
+        align-items: center;
+    }
+
+    &__a {
+        display: block;
+        padding: 10px 20px;
+        transition-property: color;
+        transition-timing-function: linear;
+        transition-delay: 0;
+
+        &:hover {
+            color: map-get($colors, 'color-a-button');
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import '../components/colors';
+
+h4 {
+    color: map-get($colors, 'color-standart-text');
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+    margin: 0px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: map-get($colors, 'color-h1-address');
+    margin: 0px;
+}
+
+p {
+    color: map-get($colors, 'color-p');
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 44px;
+    color: map-get($colors, 'color-h1-address');
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0px;
+}
+
+h2 {
+    color: map-get($colors, 'color-standart-text');
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin: 0px;
+}
+
+h3 {
+    color: map-get($colors, 'color-standart-text');
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colors, 'color-standart-text');
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin: 0px;
+}
+
+a:focus {
+    color: map-get($colors, 'color-a-button');
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+input {
+    width: 358px;
+    height: 50px;
+    background-color: map-get($colors, 'color-icon');
+}
+
+button {
+    padding: 6px 22px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    user-select: none;
+}

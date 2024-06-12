@@ -1,0 +1,13 @@
+@import './section1';
+@import './section2';
+@import './section3';
+@import '../colors';
+
+footer {
+    display: flex;
+    background-color: map-get($colors, 'color-standart-text');
+    align-items: center;
+    width: 1170px;
+    padding: 60px 215px;
+    gap: 70px;
+}
