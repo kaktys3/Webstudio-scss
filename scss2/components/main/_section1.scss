@@ -1,15 +1,13 @@
 @import '../colors';
+@import '../utils/mixins';
 
 .div-general-section1-main {
-    padding: 0px 22px 50px;
+    padding: 90px 22px 50px;
     margin: 0 auto;
     gap: 9px;
 
     &__div-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 9px;
+        @include flex(flex, center, center, none, 9px);
     }
 
     &__button {
@@ -26,9 +24,16 @@
     }
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0px 15px;
+@media (max-width: 480px) {
+    .div-general-section1-main {
+        padding: 60px 0px 40px;
+        display: flex;
+    }
 
-}
+    .div-general-section1-main__div-button {
+        flex-wrap: wrap;
+        max-width: 326px;
+        display: flex;
+        justify-content: start;
+    }
+  }

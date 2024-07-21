@@ -1,4 +1,6 @@
-@import '../colors';
+@import '../components/colors';
+@import '../components/utils/mixins';
+@import '../components/utils/placeholders';
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,71 +10,43 @@ body {
 }
 
 h1 {
-    font-size: 44px;
-    color: map-get($colors, 'color-h1-address');
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 0px;
+    @include styliText(44px, uppercase, 900, none, 'color-h1-address', none, none, none, none);
+}
+
+.h5 {
+    color: #000;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
 }
 
 h2 {
-    color: map-get($colors, 'color-standart-text');
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin: 0px;
+    @include styliText(36px, none, 700, center, 'color-standart-text', normal, normal, 1.08px, none);
+    display: flex
 }
 
 h3 {
-    color: map-get($colors, 'color-standart-text');
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin: 0px;
+    @include styliText(14px, uppercase, 700, none, 'color-standart-text', normal, normal, 00.42px, none);
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.03em;
-    padding: 0px 0px 2px;
-    margin: 0px;
+    @include styliText(20px, none, 700, none, none, none, none, 00.03em, 0px 0px 2px);
 }
 
 h5 {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: map-get($colors, 'color-standart-text');
-    margin: 0px;
-    padding: 30px 0px 10px;
+    @include styliText(14px, uppercase, 700, none, 'color-standart-text', none, none, 00.03em, 30px 0px 0px);
 }
 
 p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: map-get($colors, 'color-p');
-    margin: 0px;
+    @include styliText(14px, none, 400, none, 'color-p', none, 171%, 00.03em, none);
 }
 
 a {
+    @include styliText(14px, none, 500, none, 'color-standart-text', normal, normal, 00.28px, none);
     text-decoration: none;
-    color: map-get($colors, 'color-standart-text');
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    margin: 0px;
 }
 
 a:focus {
@@ -87,5 +61,58 @@ a:focus {
 input {
     width: 358px;
     height: 50px;
+    @include sizes(358px, 50px);
     background-color: map-get($colors, 'color-input');
+}
+
+@media (max-width: 480px) {
+    .icon-group-1 {
+        padding: 16px 78px;
+    }
+
+    .icon-group-2 {
+        padding: 15px 80px;
+    }
+
+    .icon-group-3 {
+        padding: 20px 79px;
+    }
+
+    .icon-group-4 {
+        padding: 21px 60px;
+    }
+
+    .icon-group-5 {
+        padding: 20px 70px;
+    }
+
+    .icon-group-6 {
+        padding: 18px 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-group-1 {
+        padding: 19px 88px;
+    }
+
+    .icon-group-2 {
+        padding: 18px 91px;
+    }
+
+    .icon-group-3 {
+        padding: 23px 91px;
+    }
+
+    .icon-group-4 {
+        padding: 21px 69px;
+    }
+
+    .icon-group-5 {
+        padding: 19px 80px;
+    }
+
+    .icon-group-6 {
+        padding: 19px 64px;
+    }
 }

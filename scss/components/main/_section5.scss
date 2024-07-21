@@ -1,17 +1,28 @@
+@import '../utils/mixins';
+@import '../utils/placeholders';
+
 .section5-div-general {
-    display: flex;
+    @include flexJastyfuContentAlingContent(center, center, flex, 94px 0px, 50px);
     flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    padding: 94px 0px;
 
     &__h2 {
         font-size: 36px;
     }
 
     &__div-layout {
-        display: flex;
-    justify-content: center;
+    @extend %standart-alignment-flex-by-x;
     gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section5-div-general__div-layout {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .section5-div-general__div-layout {
+        flex-wrap: wrap;
     }
 }

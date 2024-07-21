@@ -1,32 +1,17 @@
 @import '../components/colors';
+@import '../components/utils/mixins';
 
 h4 {
-    color: map-get($colors, 'color-standart-text');
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 1.08px;
-    margin: 0px;
+    @include stilyText('color-standart-text', 18px, 700, normal, 36px, 0px, none);
 }
 
 h5 {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: map-get($colors, 'color-h1-address');
-    margin: 0px;
+    @include stilyText('color-h1-address', 14px, 700, none, none, 00.03em, uppercase);
 }
 
 p {
-    color: map-get($colors, 'color-p');
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0.48px;
-    margin: 0px;
+    @include stilyText('color-p', 16px, 400, normal, 30px, 0.48px, none);
 }
 
 body {
@@ -36,45 +21,31 @@ body {
     margin: 0px;
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding: 0px 0px 0px 15px;
+    }
+}
+
 h1 {
-    font-size: 44px;
-    color: map-get($colors, 'color-h1-address');
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 0px;
+
+    @include stilyText('color-h1-address', 44px, 900, none, none, none, uppercase);
 }
 
 h2 {
     color: map-get($colors, 'color-standart-text');
     text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.08px;
-    margin: 0px;
+    @include stilyText('color-standart-text', 36px, 700, normal, normal, 11.08px, none);
 }
 
 h3 {
-    color: map-get($colors, 'color-standart-text');
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin: 0px;
+    @include stilyText('color-standart-text', 14px, 700, normal, normal, 0.42px, uppercase);
 }
 
 a {
     text-decoration: none;
-    color: map-get($colors, 'color-standart-text');
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    margin: 0px;
+    @include stilyText('color-standart-text', 14px, 500, normal, normal, 0.28px, none);
 }
 
 a:focus {
@@ -82,13 +53,12 @@ a:focus {
 }
 
 .container {
+    @include dimensions(none, none, 0px 15px);
     margin: 0 auto;
-    padding: 0px 15px;
 }
 
 input {
-    width: 358px;
-    height: 50px;
+    @include dimensions(358px, 50px, none);
     background-color: map-get($colors, 'color-icon');
 }
 
@@ -96,10 +66,6 @@ button {
     padding: 6px 22px;
     border-radius: 4px;
     display: inline-block;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.48px;
     user-select: none;
+    @include stilyText(none, 16px, 500, normal, 26px, 0.48px, none);
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/WebStudio (6)/style.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
 
@@ -26,6 +27,7 @@
                     <a class="nav__link" href="./portfolio.html">Портфоліо</a>
                     <a class="nav__link" href="">Контакти</a>
                 </nav>
+                <img class="img-mobail" src="./img/menu_40px.png" alt="">
             </div>
             <address class="address">
                 <div class="address__div-icon-a">
@@ -89,14 +91,10 @@
                             </svg>
                             <h5 class="h5">УВАГА ДО ДЕТАЛЕЙ</h5>
                         </div>
-                        <div class="div-general__div-icon-antenna-text">
-                            <p class="p">Ідейні міркування, і навіть початок</p>
-                            <p class="p">повсякденної роботи з формування</p>
-                            <p class="p">позиції.</p>
-                        </div>
+                            <p class="div-general__div-icon-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </div>
                     <div class="div-general__div-kit-icon-clock">
-                        <div class="div-general__div-icon-clock">
+                        <div class="div-general__div-icon-antenna">
                             <svg class="icon icon-clock">
                                 <use xlink:href="#icon-clock">
                                     <symbol id="icon-clock" viewBox="0 0 32 32">
@@ -117,13 +115,10 @@
                             </svg>
                             <h5 class="h5">ПУНКТУАЛЬНІСТЬ</h5>
                         </div>
-                        <div class="div-general__div-icon-clock-text">
-                            <p class="p">Завдання організації, особливо рамки</p>
-                            <p class="p">і місце навчання кадрів тягне у себе.</p>
-                        </div>
+                            <p class="div-general__div-icon-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </div>
                     <div class="div-general__div-kit-icon-diagram">
-                        <div class="div-general__div-icon-diagram">
+                        <div class="div-general__div-icon-antenna">
                             <svg class="icon icon-diagram-1-2">
                                 <use xlink:href="#icon-diagram-1-2">
                                     <symbol id="icon-diagram-1-2" viewBox="0 0 32 32">
@@ -143,13 +138,10 @@
                             </svg>
                             <h5 class="h5">ПЛАНУВАННЯ</h5>
                         </div>
-                        <div class="div-general__div-icon-diagram-text">
-                            <p class="p">Так само консультація з широким</p>
-                            <p class="p">активом значною мірою зумовлює.</p>
-                        </div>
+                            <p class="div-general__div-icon-text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </div>
                     <div class="div-general__div-kit-icon-astronaut">
-                        <div class="div-general__div-icon-astronaut">
+                        <div class="div-general__div-icon-antenna">
                             <svg class="icon icon-astronaut">
                                 <use xlink:href="#icon-astronaut">
                                     <symbol id="icon-astronaut" viewBox="0 0 32 32">
@@ -204,11 +196,7 @@
                             </svg>
                             <h5 class="h5">СУЧАСНІ ТЕХНОЛОГІЇ</h5>
                         </div>
-                        <div class="div-general__div-icon-astronaut-text">
-                            <p class="p">Значимість цих проблем настільки</p>
-                            <p class="p">очевидна, що реалізація планових</p>
-                            <p class="p">завдань.</p>
-                        </div>
+                            <p class="div-general__div-icon-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </div>
                 </div>
             </div>
@@ -239,7 +227,10 @@
         <section class="section4">
             <div class="container">
                 <div class="section4-div-general">
-                    <h2 class="h2">наша команда</h2>
+                    <div class="section4-div-general__h2">
+                        <h2>Наша</h2>
+                        <h2>команда</h2>
+                    </div>
                     <div class="personnel">
                         <div class="personnel-user">
                             <img class="personnel-user__img" src="./img/img27.png" alt="">
@@ -722,25 +713,29 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="section1">
+        <section class="footer-section-address">
             <div class="footer-section1-div-general">
-                <img class="footer-section1-div-general__img" src="./img/WebStudio7.png" alt="">
+                <a href="" class="logo-link2">
+                    <span class="span2">Web</span>Studio
+                </a>
                 <table>
-                    <tr>
-                        <td class="footer-section1-div-general__address">м. Київ, пр-т Лесі Українки, 26</td>
-                    </tr>
-                    <tr>
-                        <td class="footer-section1-div-general__mail">info@devstudio.com</td>
-                    </tr>
-                    <tr>
-                        <td class="footer-section1-div-general__mail">+38 096 111 11 11</td>
-                    </tr>
+                    <tbody class="footer-section1-div-general__content">
+                        <tr>
+                            <td class="footer-section1-div-general__address">м. Київ, пр-т Лесі Українки, 26</td>
+                        </tr>
+                        <tr>
+                            <td class="footer-section1-div-general__mail">info@devstudio.com</td>
+                        </tr>
+                        <tr>
+                            <td class="footer-section1-div-general__mail">+38 096 111 11 11</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
-        <section class="section2">
+        <section class="footer-section-social-networks">
             <div class="footer-section2-div-general">
-                <h5 class="h5">приєднуйтесь</h5>
+                <h5 class="h5-footer">приєднуйтесь</h5>
                 <div class="footer-section2-div-general__socisl-netwotka-img">
                     <div class="footer-section2-div-general__icon">
                         <a class="a" href=""><svg class="icon icon-instagram">
@@ -801,13 +796,16 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
+        <section class="footer-section-emeil">
             <div class="footer-section3-div-general">
                 <div class="footer-section3-div-general__term-of-entry">
-                    <h5 class="h5">Підпишіться на розсилку</h5>
+                    <h5 class="h5-footer">Підпишіться на розсилку</h5>
                     <div class="footer-section3-div-general__input">
                         <input type="text" placeholder="E-mail">
-                        <button class="footer-section3-div-general__button"><span>Підписатися</span><img src="./icon.send.png" alt=""></button>
+                        <button class="footer-section3-div-general__button"><span
+                                class="footer-section3-div-general__button-text">Підписатися</span><img
+                                class="footer-section3-div-general__button-img" src="./img/icon.send.png"
+                                alt=""></button>
                     </div>
                 </div>
             </div>

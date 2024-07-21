@@ -1,0 +1,29 @@
+%standart-alignment-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%standart-alignment-flex-by-x {
+    display: flex;
+    justify-content: center;
+}
+
+%standart-alignment-flex-by-y {
+    display: flex;
+    align-items: center;
+}
+
+%alignment-flex-by-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// @extend %standart-alignment-flex-by-y;
+
+// @extend %standart-alignment-flex-by-x;
+
+// @extend %standart-alignment-flex;
+
+// @extend %alignment-flex-by-y;

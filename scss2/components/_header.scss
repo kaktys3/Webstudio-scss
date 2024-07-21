@@ -1,22 +1,18 @@
 @import '../components/colors';
+@import '../components/utils/mixins';
 
 .heder-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, center, space-between, none, none);
 }
 
 /* навігаційна система */
 
 .menu {
-    display: flex;
-    align-items: center;
-    gap: 93px;
+    @include flex(flex, center, none, none, 93px);
 }
 
 .nav {
-    display: flex;
-    gap: 50px;
+    @include flex(flex, none, none, none, 50px);
     color: #212121;
     text-align: center;
     font-family: Roboto;
@@ -42,27 +38,15 @@
 
 
 .logo-link {
-    color: map-get($colors, 'color-standart-text');
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    @include stilyText('color-standart-text', 26px, 700, normal, normal, 0.78px, none);
 
     .span {
-        color: map-get($colors, 'color-a-button');
-        font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.78px;
+        @include stilyText('color-a-button', 26px, 700, normal, normal, 0.78px, none);
     }
 }
 
 .address {
-    display: flex;
-    gap: 50px;
+    @include flex(flex, none, none, none, 50px);
 
     &__div-icon-a {
         display: flex;
@@ -82,9 +66,46 @@
     }
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0px 15px;
+@media (max-width: 768px) {
+    .heder-container {
+        gap: 90px;
+        justify-content: center;
+    }
 
+    .address {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        gap: 87px;
+    }
+
+    .nav {
+        gap: 32px;
+    }
+
+    .address__a {
+        padding: 0px 0px 0px 8px;
+    }
+}
+
+.img-mobail {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    .address,
+    .nav {
+        display: none;
+    }
+
+    .img-mobail {
+        display: block;
+    }
+
+    .menu {
+        gap: 276px;
+    }
 }

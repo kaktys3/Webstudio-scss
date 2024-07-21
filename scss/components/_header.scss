@@ -1,35 +1,26 @@
-@import '../colors';
+@import '../components/colors';
+@import '../components/utils/mixins';
+@import '../components/utils/placeholders';
 
 .heder-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexJastyfuContentAlingContent(center, center, flex, none, 315px);
 }
 
 /* навігаційна система */
 
 .menu {
-    display: flex;
-    align-items: center;
+    @extend %standart-alignment-flex-by-y;
     gap: 93px;
 }
 
 .nav {
+    @include headerLogo('color-standart-text', 1.08px, 36px);
     display: flex;
     gap: 50px;
-    color: map-get($colors, 'color-standart-text');
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.08px;
+    align-items: center;
 
     &__link {
-        padding: 28px 0px;
-        transition-property: color, border;
-        transition-timing-function: linear;
-        transition-delay: 0;
+        @include transform(28px 0px, color, border, none, none);
 
         &:hover {
             color: map-get($colors, 'color-a-button');
@@ -39,24 +30,15 @@
     }
 }
 
-
+.img-mobail {
+    display: none;
+}
 
 .logo-link {
-    color: black;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    @include headerLogo('color-standart-text', 0.78px, 26px);
 
     .span {
-        color: map-get($colors, 'color-a-button');
-        font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.78px;
+        @include headerLogo('color-a-button', 0.78px, 26px);
     }
 }
 
@@ -65,19 +47,50 @@
     gap: 50px;
 
     &__div-icon-a {
-        display: flex;
-        align-items: center;
+        @extend %standart-alignment-flex-by-y;
     }
 
     &__a {
         display: block;
-        padding: 10px 20px;
-        transition-property: color;
-        transition-timing-function: linear;
-        transition-delay: 0;
+        @include transform(10px 20px, color, none, none, none);
 
         &:hover {
             color: map-get($colors, 'color-a-button');
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .heder-container {
+        gap: 90px;
+    }
+
+    .address {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        gap: 87px;
+    }
+
+    .nav {
+        gap: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .address,
+    .nav {
+        display: none;
+    }
+
+    .img-mobail {
+        display: block;
+    }
+
+    .menu {
+        gap: 276px;
     }
 }

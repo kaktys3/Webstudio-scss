@@ -1,13 +1,25 @@
 @import '../colors';
+@import '../utils/mixins';
+@import '../utils/placeholders';
+
+@media (max-width: 480px) {
+    .section3 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .section3 {
+        display: none;
+    }
+}
 
 .example {
     padding: 94px 0px;
 
     &__div-content {
-        display: flex;
         gap: 30px;
-        align-items: center;
-        justify-content: center;
+        @extend %standart-alignment-flex;
         padding: 50px 0px 0px;
     }
 
@@ -16,29 +28,14 @@
     }
 
    &__content-namber1 {
-        position: absolute;
-        bottom: 3px;
-        padding: 27px 107px;
-        font-size: 14px;
-        color: map-get($colors, 'color-h1-address');
-        background-image: url(/img/bg.png);
+        @include exempelContent(27px 107px) ;
     }
 
     &__content-namber2 {
-        position: absolute;
-        bottom: 3px;
-        padding: 27px 113px;
-        font-size: 14px;
-        color: map-get($colors, 'color-h1-address');
-        background-image: url(/img/bg.png);
+        @include exempelContent(27px 113px) ;
     }
     
     &__content-namber3 {
-        position: absolute;
-        bottom: 3px;
-        padding: 27px 94px;
-        font-size: 14px;
-        color: map-get($colors, 'color-h1-address');
-        background-image: url(/img/bg.png);
+        @include exempelContent(27px 94px) ;
     }
 }

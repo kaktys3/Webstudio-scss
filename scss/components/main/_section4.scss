@@ -1,41 +1,101 @@
 @import '../colors';
+@import '../utils/mixins';
+@import '../utils/placeholders';
 
 .section4-div-general {
-    display: flex;
     flex-direction: column;
-    padding: 94px 215px;
-    background: map-get($colors, 'color-h1-address');
-    gap: 50px;
+    @include flexJastyfuContentAlingContent(none, none, flex, 94px 215px, 50px);
+}
+
+@media (max-width: 480px) {
+    .section4-div-general {
+        display: flex;
+        justify-content: center;
+        max-width: 480px
+    }
 }
 
 .personnel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %standart-alignment-flex;
     gap: 30px;
 }
 
+@media (max-width: 480px) {
+    .personnel {
+        flex-direction: column
+    }
+
+    .personnel-user__information2 {
+margin: 0px;
+        
+        h5 {
+            color: #000;
+            padding: 0px;
+        }
+    }
+}
+
+
 .personnel-user {
     &__img {
-        width: 270px;
-        height: 260px;
+        @include sizes(270px, 260px);
     }
 
     &__information1 {
         background-color: map-get($colors, 'color-h1-address');
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %alignment-flex-by-y;
     }
 
-    &__information1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &__information2 {
+        @extend %alignment-flex-by-y;
         padding: 0px 0px 16px;
     }
 }
 
 .layout-icon-img {
     display: flex;
+}
+
+.igor {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.olga {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mikola {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mihailo {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.section4 {
+    background: map-get($colors, 'color-section4');
+}
+
+@media (max-width: 768px) {
+    .personnel {
+        flex-wrap: wrap;
+    }
+
+    .section4-div-general {
+        padding: 60px 0px;
+    }
+
+    .personnel-user__img {
+        width: 354px;
+        height: 374px;
+    }
+}
+
+@media (min-width: 320px),
+(max-width: 480px) {
+    .section4-div-general__h2 {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
 }

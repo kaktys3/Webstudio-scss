@@ -1,0 +1,74 @@
+@import '../colors';
+@import '../utils/mixins';
+@import '../utils/placeholders';
+
+.h5 {
+    color: map-get($colors, 'color-h1-address');
+    padding: 0px 0px 20px 0px;
+}
+
+.footer-section3-div-general {
+    @include flexJastyfuContentAlingContent(none, none, flex, 0px 0px 10px, none);
+
+    &__term-of-entry {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__button {
+        @include sizes(200px, 50px);
+        background-color: map-get($colors, 'color-a-button');
+        border-radius: 5px;
+        @include styliText(16px, none, 700, center, 'color-a-button', none, 187%, 0.06em, none);
+
+        &:focus:hover {
+            animation-name: button2;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+    }
+
+    &__button-text {
+        color: map-get($colors, 'color-section4');
+    }
+
+    @keyframes button2 {
+        0% {
+            background-color: map-get($colors, 'color-a-button');
+        }
+
+        100% {
+            background-color: map-get($colors, 'color-h1-address');
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section3-div-general__input {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+    }
+
+    .footer-section3-div-general__term-of-entry {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section3-div-general__term-of-entry {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-section3-div-general__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}

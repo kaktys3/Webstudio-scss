@@ -1,6 +1,51 @@
+@import '../utils/placeholders';
+
 .div-general {
-    display: flex;
-    justify-content: center;
+    @extend %standart-alignment-flex-by-x;
     padding: 94px 0px 0px;
     gap: 30px;
+}
+
+.div-general__div-icon-text {
+ width: 270px;   
+}
+
+@media not (max-width: 480px) {
+    .div-general__div-icon-text {
+        width: 270px;   
+       }
+}
+
+@media (max-width: 480px) {
+
+    .div-general__div-icon-astronaut-text {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .icon-clock,
+    .icon-astronaut,
+    .icon-antenna,
+    .icon-diagram-1-2 {
+        display: flex;
+        justify-content: center;
+        padding: 26px 192px;
+    }
+
+    .div-general__div-icon-antenna {
+        h5 {
+            text-align: center;
+            padding: 30px 0 10px;
+        }
+    }
+    .div-general__div-icon-text {
+       width: 450px;   
+       }
+}
+
+@media (max-width: 768px) {
+    .div-general {
+        padding: 60px;
+        flex-wrap: wrap;
+    }
 }
