@@ -4,29 +4,20 @@
 @import '../colors';
 @import '../utils/mixins';
 
-footer {
-    @include flex(flex, center, none, none, 70px);
-    background-color: map-get($colors, 'color-input');
-    @include dimensions(none, none, 60px 215px);
-}
-
-@media (min-width: 481px), (max-width: 768px) {
     footer {
-        align-items: center;
-        justify-content: center;
-        gap: 60px;
-        padding: 60px 0px 0px;
-        overflow: hidden;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 480px) {
-    footer {
+        display: flex;
         align-items: center;
         flex-direction: column;
         gap: 60px;
-        padding: 60px 0px 0px;
-        overflow: hidden;
+        padding: 60px 0px;
+        background-color: map-get($colors, 'color-input');
     }
-}
+
+    @media (min-width: 481px) {
+        footer {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: normal;
+        }
+    }

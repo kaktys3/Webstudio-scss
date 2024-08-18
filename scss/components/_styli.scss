@@ -37,7 +37,7 @@ h4 {
 }
 
 h5 {
-    @include styliText(14px, uppercase, 700, none, 'color-standart-text', none, none, 00.03em, 30px 0px 0px);
+    @include styliText(14px, uppercase, 700, none, 'color-standart-text', none, none, 00.03em, 0px 0px 10px);
 }
 
 p {
@@ -56,6 +56,14 @@ a:focus {
 .container {
     margin: 0 auto;
     padding: 0px 15px;
+}
+
+@media (min-width: 481px) {
+    .heder-container {
+        display: flex;
+        gap: 90px;
+        padding: 21px 15px;
+    }
 }
 
 input {

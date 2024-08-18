@@ -2,19 +2,16 @@
 @import '../utils/mixins';
 @import '../utils/placeholders';
 
-.h5 {
-    color: map-get($colors, 'color-h1-address');
-    padding: 0px 0px 20px 0px;
+.h5-footer {
+    color: white;
 }
 
 .footer-section2-div-general {
-    gap: 20px;
-    padding: 15px 0px;
-    flex-direction: column;
+    text-align: center;
 
     &__socisl-netwotka-img {
-        gap: 10px;
         display: flex;
+        gap: 10px;
     }
 
     &__icon {
@@ -27,19 +24,12 @@
     }
 }
 
-@media (max-width: 480px) {
-    .footer-section2-div-general{
-        text-align: center;
-    }
-}
+@media (min-width: 1200px) {
+    .footer-section2-div-general {
+        text-align: start;
 
-@media (max-width: 768px) {
-    .footer-section2-div-general{
-        text-align: center;
+        &__socisl-netwotka-img {
+            justify-content: start;
+        }
     }
-}
-
-.h5-footer {
-    color: white;
-    padding: 20px;
 }

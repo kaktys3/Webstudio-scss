@@ -5,33 +5,20 @@
 @import '../utils/mixins';
 
 footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 0px;
     background-color: map-get($colors, 'color-input');
-    @include flexJastyfuContentAlingContent(center, none, flex, 60px 215px, 70px);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 481px) {
     footer {
-        align-items: center;
-        flex-direction: column;
-        gap: 60px;
-        padding: 60px 0px 0px;
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    footer {
-        align-items: center;
-        justify-content: center;
-        gap: 60px;
-        padding: 60px 0px 0px;
-        overflow: hidden;
+        flex-direction: row;
         flex-wrap: wrap;
-    }
-}
-
-footer{
-    h5 {
-        color: white;
+        justify-content: center;
+        align-items: normal;
+        
     }
 }

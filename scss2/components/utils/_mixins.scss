@@ -32,3 +32,12 @@
     transition-delay: 0;
     border-radius: 50%;
 }
+
+@mixin headerLogo($color, $letter-spacing, $font-size) {
+    color: map-get($colors, $color);
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: $letter-spacing;
+}

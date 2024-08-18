@@ -38,12 +38,13 @@ margin: 0px;
 
 .personnel-user {
     &__img {
-        @include sizes(270px, 260px);
+        @include sizes(450px, 460px);
     }
 
     &__information1 {
         background-color: map-get($colors, 'color-h1-address');
         @extend %alignment-flex-by-y;
+        padding: 30px 0px 24px;
     }
 
     &__information2 {
@@ -76,7 +77,7 @@ margin: 0px;
     background: map-get($colors, 'color-section4');
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) {
     .personnel {
         flex-wrap: wrap;
     }
@@ -97,5 +98,12 @@ margin: 0px;
         display: flex;
         justify-content: center;
         gap: 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .personnel {
+        max-width: none;
+        flex-wrap: nowrap;
     }
 }

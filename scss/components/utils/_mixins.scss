@@ -43,7 +43,7 @@
     padding: $padding;
 }
 
-@mixin styliText($font-size, $text-transform, $font-weight, $align, $color, $font-style, $line-height, $letter-spacing, $padding) {
+@mixin styliText($font-size, $text-transform, $font-weight, $align, $color, $font-style, $line-height, $letter-spacing, $padding, $margin: 0px) {
     font-size: $font-size;
     color: map-get($colors, $color);
     text-transform: $text-transform;
@@ -53,10 +53,27 @@
     line-height: $line-height;
     letter-spacing: $letter-spacing;
     padding: $padding;
+    margin: $margin;
+}
+
+@mixin stilyText2($color, $font-size, $font-weight, $font-style, $line-height, $letter-spacing, $text-transform) {
+    color: map-get($colors, $color);
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
     margin: 0px;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    text-transform: $text-transform;
 }
 
 @mixin sizes($width, $height) {
     width: $width;
     height: $height;
+}
+
+@mixin dimensions($width, $height, $padding) {
+    width: $width;
+    height: $height;
+    padding: $padding;
 }

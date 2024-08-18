@@ -1,111 +1,76 @@
 @import '../components/colors';
 @import '../components/utils/mixins';
 
-.heder-container {
-    @include flex(flex, center, space-between, none, none);
+.nav,
+.address {
+    display: none;
 }
-
-/* навігаційна система */
-
-.menu {
-    @include flex(flex, center, none, none, 93px);
-}
-
-.nav {
-    @include flex(flex, none, none, none, 50px);
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.08px;
-
-    &__link {
-        padding: 28px 0px;
-        transition-property: color, border;
-        transition-timing-function: linear;
-        transition-delay: 0;
-
-        &:hover {
-            color: map-get($colors, 'color-a-button');
-            border-bottom: 5px solid map-get($colors, 'color-a-button');
-            border-radius: 3px;
-        }
-    }
-}
-
-
 
 .logo-link {
-    @include stilyText('color-standart-text', 26px, 700, normal, normal, 0.78px, none);
+    @include headerLogo('color-standart-text', 0.78px, 26px);
 
     .span {
-        @include stilyText('color-a-button', 26px, 700, normal, normal, 0.78px, none);
+        @include headerLogo('color-a-button', 0.78px, 26px);
     }
 }
 
-.address {
-    @include flex(flex, none, none, none, 50px);
-
-    &__div-icon-a {
-        display: flex;
-        align-items: center;
-    }
-
-    &__a {
-        display: block;
-        padding: 10px 20px;
-        transition-property: color;
-        transition-timing-function: linear;
-        transition-delay: 0;
-
-        &:hover {
-            color: map-get($colors, 'color-a-button');
-        }
-    }
+.menu {
+    display: flex;
+justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .heder-container {
-        gap: 90px;
-        justify-content: center;
-    }
+header {
+    border-bottom: 1px solid #ECECEC;
+}
 
+@media (min-width: 481px) {
+
+    .nav,
     .address {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;
+    }
+
+    .img-mobail {
+        display: none;
     }
 
     .menu {
-        gap: 87px;
+        align-items: center;
+        gap: 88px;
     }
 
     .nav {
         gap: 32px;
     }
 
-    .address__a {
-        padding: 0px 0px 0px 8px;
+    .heder-container {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .address {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    header {
+        padding: 21px 0px;
     }
 }
 
-.img-mobail {
-    display: none;
-}
-
-@media (max-width: 480px) {
-
-    .address,
-    .nav {
-        display: none;
-    }
-
-    .img-mobail {
-        display: block;
-    }
-
+@media (min-width: 1200px) {
     .menu {
-        gap: 276px;
+        gap: 93px;
+    }
+
+    .address {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .heder-container {
+        gap: 312px;
+        justify-content: center;
     }
 }

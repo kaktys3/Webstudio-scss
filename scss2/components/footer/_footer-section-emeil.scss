@@ -1,25 +1,16 @@
 @import '../colors';
 @import '../utils/mixins';
 
-.h5 {
-    color: map-get($colors, 'color-h1-address');
-    padding: 0px 0px 20px 0px;
-}
 
 .footer-section3-div-general {
-    display: flex;
-    padding: 0px 0px 10px 0px;
-
-    &__term-of-entry {
-        @include flex(flex, none, space-between, column, none);
-    }
-
     &__button {
+        display: flex;
         @include dimensions(200px, 50px, none);
         text-align: center;
         background-color: map-get($colors, 'color-a-button');
         border-radius: 5px;
         @include stilyText('color-h1-address', 16px, 700, none, 187%, 0.06em, none);
+        gap: 12px;
 
         &:focus:hover {
             animation-name: button2;
@@ -27,42 +18,31 @@
             animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
         }
     }
-    
-    @keyframes button2 {
-        0% {
-            background-color: map-get($colors, 'color-a-button');
-        }
-    
-        100% {
-            background-color: map-get($colors, 'color-h1-address');
-            
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-section3-div-general__input {
-       display: flex;
-       flex-direction: column;
-       gap: 20px;
-       align-items: center;
-    }
-
-    .footer-section3-div-general__term-of-entry {
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-section3-div-general__term-of-entry {
-        display: flex;
-        align-items: center;
-    }
 
     .footer-section3-div-general__input {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
+    }
+
+    &__term-of-entry {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-section3-div-general {
+        &__term-of-entry {
+            align-items: normal;
+        }
+    }
+
+    .footer-section3-div-general .footer-section3-div-general__input {
+        flex-direction: row;
+        gap: 12px;
     }
 }
