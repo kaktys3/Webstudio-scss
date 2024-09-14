@@ -51,9 +51,9 @@ Single-colored icons can be modified like so:
 }
 
 .icon-group-1 {
-  width: 41px;
+  width: 40px;
   height: 46.7px;
-  padding: 23px 65px;
+  padding: 23px 50px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
@@ -209,4 +209,32 @@ Single-colored icons can be modified like so:
   width: 20px;
   height: 20px;
   color: white;
+}
+
+.icon-Vector-11 {
+  color: black;
+}
+
+.icon-Vector-11:hover {
+  color: #2196F3;
+}
+
+.icon-Vector-8 {
+  width: 12px;
+  height: 12px;
+}
+
+.icon-Vector-9 {
+  width: 13px;
+  height: 13px;
+}
+
+.icon-Vector-10 {
+  width: 1em;
+  height: 1em;
+}
+
+.icon-Vector-13 {
+  width: 11px;
+  height: 8px;
 }

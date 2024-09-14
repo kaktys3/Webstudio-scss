@@ -1,0 +1,23 @@
+.div-header-general {
+    padding: 10px 0px 302px;
+
+    &__link2 {
+        font-size: 40px;
+        color: #212121;
+    }
+
+    &__link2:focus {
+        color: #2196f3;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.header-div-text {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}

@@ -1,0 +1,204 @@
+@charset "UTF-8";
+.div-header-general__link {
+  display: flex;
+  width: 11px;
+  height: 11px;
+  padding: 9px 10px;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #fff;
+}
+.div-header-general .div-header-general__link2 {
+  display: flex;
+  justify-content: center;
+}
+.div-header-general .h4 {
+  width: 374px;
+  text-align: center;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/img/МодальнеВікно1.png);
+  padding: 0px 15px;
+  height: 796px;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+a {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+  outline: #2196f3;
+  border-color: #2196f3;
+}
+
+.form-div__term {
+  width: 370px;
+  height: 40px;
+}
+.form-div__term2 {
+  width: 370px;
+  height: 120px;
+}
+.form-div__text {
+  padding: 60px 0px 4px;
+}
+.form-div__text2 {
+  padding: 10px 0px 4px;
+}
+
+.div-section1-input-posishion {
+  position: absolute;
+}
+
+.icon-Vector-10,
+.icon-Vector-9,
+.icon-Vector-8 {
+  position: relative;
+  right: 360px;
+}
+
+.form {
+  padding: 0px 0px 0px 18px;
+}
+
+.form-div__term:focus + .modal-label2 > .icon-Vector-8 {
+  fill: #2196f3;
+}
+
+.icon-Vector-8 {
+  width: 12px;
+  height: 12px;
+  color: black;
+}
+
+.form-div__term2 {
+  position: relative;
+}
+
+.form-div__term2::-moz-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.form-div__term2::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.div-main2-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-main2-general__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  border-radius: 4px;
+  border: 0px;
+  width: 200px;
+  height: 50px;
+  margin: 0px 0px 40px;
+}
+.div-main2-general__text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  border: 0px;
+}
+
+.span-user-privasy {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.span-user-privasy {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.user-privacy:checked + .modal-label > .span-user-privasy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #2196f3;
+}
+
+.modal-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-div-checkbox {
+  padding: 20px 0px 31px;
+}
+
+.galochka2 {
+  fill: #fff;
+  width: 11px;
+  height: 9px;
+}

@@ -1,0 +1,66 @@
+// *,
+// *::after,
+// *::before {
+//     box-sizing: border-box;
+// }
+
+.modal-windows {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ align-items: center;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    width: 405px;
+    height: 609px;
+}
+
+.modal-windows.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.active {
+    display: block;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+a {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: 2px solid #21212133;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    outline: #2196f3;
+    border-color: #2196f3;
+}

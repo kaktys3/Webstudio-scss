@@ -1,0 +1,22 @@
+.div-header-general {
+
+    &__link {
+        display: flex;
+        width: 11px;
+        height: 11px;
+        padding: 9px 10px;
+        border-radius: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        fill: #fff;
+    }
+
+    .div-header-general__link2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h4 {
+        width: 374px;
+        text-align: center;
+    }
+}

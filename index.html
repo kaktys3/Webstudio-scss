@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/WebStudio (6)/style.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/WebStudio (6)/index.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
@@ -801,7 +802,7 @@
                 <div class="footer-section3-div-general__term-of-entry">
                     <h5 class="h5-footer">Підпишіться на розсилку</h5>
                     <div class="footer-section3-div-general__input">
-                        <input type="text" placeholder="E-mail">
+                        <input class="term-footer-o" type="text" placeholder="E-mail">
                         <button class="footer-section3-div-general__button"><span
                                 class="footer-section3-div-general__button-text">Підписатися</span><img
                                 class="footer-section3-div-general__button-img" src="./img/icon.send.png"
@@ -811,6 +812,77 @@
             </div>
         </section>
     </footer>
+    <div class="modal-windows">
+        <div class="container2">
+            <div class="div-header-general">
+                <span class="div-header-general__link2">
+                    <a class="div-header-general__link" href=""><svg class="icon icon-Vector-11">
+                            <use xlink:href="#icon-Vector-11">
+                                <symbol id="icon-Vector-11" viewBox="0 0 32 32">
+                                    <path
+                                        d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z">
+                                    </path>
+                                </symbol>
+                            </use>
+                        </svg></a>
+                </span>
+                <h4 class="h4">Залиште свої дані, ми вам передзвонимо</h4>
+            </div>
+        </div>
+        <div class="container2">
+            <form class="form">
+                <div class="form-div">
+                    <p class="form-div__text2">Ім'я</p>
+                    <div class="div-section1-input-posishion"></div>
+                    <input id="form-div__term" name="form-div__term" type="text" class="form-div__term">
+                    <label for="form-div__term" class="modal-label2">
+                        <svg class="icon-Vector-8">
+                            <use xlink:href="/img/symbol-defs.svg#icon-Vector-8"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="form-div">
+                    <p class="form-div__text2">Телефон</p>
+                    <div class="div-section1-input-posishion">
+                        <input id="form-div__term" name="form-div__term" type="text" class="form-div__term">
+                        <label for="form-div__term" class="modal-label2">
+                            <svg class="icon-Vector-8">
+                                <use xlink:href="/img/symbol-defs.svg#icon-Vector-9"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <p class="form-div__text">Пошта</p>
+                    <div class="div-section1-input-posishion">
+                        <input type="text" class="form-div__term">
+                        <label for="form-div__term" class="modal-label2">
+                            <svg class="icon-Vector-8">
+                                <use xlink:href="/img/symbol-defs.svg#icon-Vector-10"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <p class="form-div__text">Коментар</p>
+                    <input type="text" placeholder="Введіть текст" class="form-div__term2">
+                </div>
+                <div class="form-div-checkbox">
+                    <input id="user-privacy" class="user-privacy visually-hidden" type="checkbox" name="user-privacy">
+                    <label for="user-privacy" class="modal-label modal-label-flex">
+                        <span class="span-user-privasy">
+                            <svg class="galochka2">
+                                <use xlink:href="/img/symbol-defs.svg#galochka"></use>
+                            </svg>
+                        </span>
+                        <p>Погоджуюся з розсилкою та приймаю</p>
+                        <a href="">Умови договору</a>
+                    </label>
+                </div>
+            </form>
+            <button class="div-main2-general__button">Відправити</button>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+.div-main-tell {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__link {
+        font-size: 34px;
+        color: #2196f3;
+    }
+}
+
+.div-main-social-networks {
+    display: flex;
+    gap: 10px;
+
+    &__link {
+        font-size: 18px;
+        line-height: 122%;
+        color: #2196f3;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 0px 10px 0px 0px;
+    }
+
+    &__link2 {
+        font-size: 18px;
+        line-height: 122%;
+        color: #2196f3;
+    }
+}
+
+.div-main-general {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 0px 0px 48px;
+}

@@ -1,0 +1,54 @@
+.form-div {
+    &__term {
+        width: 370px;
+        height: 40px;
+    }
+
+    &__term2 {
+        width: 370px;
+        height: 120px;
+    }
+
+    &__text {
+        padding: 60px 0px 4px;
+    }
+
+    &__text2 {
+        padding: 10px 0px 4px;
+    }
+}
+
+.div-section1-input-posishion {
+    position: absolute;
+}
+
+.icon-Vector-10,
+.icon-Vector-9,
+.icon-Vector-8 {
+    position: relative;
+    right: 360px;
+}
+
+.form {
+    padding: 0px 0px 0px 18px;
+}
+
+.form-div__term:focus+.modal-label2>.icon-Vector-8 {
+    fill: #2196f3;
+}
+
+.icon-Vector-8 {
+    width: 12px;
+    height: 12px;
+    color: black;
+}
+
+.form-div__term2 {
+    position: relative;
+}
+
+.form-div__term2::placeholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
