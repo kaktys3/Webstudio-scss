@@ -72,32 +72,6 @@ input {
     @include sizes(358px, 50px);
 }
 
-@media (max-width: 480px) {
-    .icon-group-1 {
-        padding: 16px 78px;
-    }
-
-    .icon-group-2 {
-        padding: 15px 80px;
-    }
-
-    .icon-group-3 {
-        padding: 20px 79px;
-    }
-
-    .icon-group-4 {
-        padding: 21px 60px;
-    }
-
-    .icon-group-5 {
-        padding: 20px 70px;
-    }
-
-    .icon-group-6 {
-        padding: 18px 55px;
-    }
-}
-
 @media (max-width: 768px) {
     .icon-group-1 {
         padding: 19px 88px;
@@ -121,5 +95,31 @@ input {
 
     .icon-group-6 {
         padding: 19px 64px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-group-1 {
+        padding: 16px 78px;
+    }
+
+    .icon-group-2 {
+        padding: 15px 80px;
+    }
+
+    .icon-group-3 {
+        padding: 20px 79px;
+    }
+
+    .icon-group-4 {
+        padding: 21px 60px;
+    }
+
+    .icon-group-5 {
+        padding: 20px 70px;
+    }
+
+    .icon-group-6 {
+        padding: 18px 55px;
     }
 }
