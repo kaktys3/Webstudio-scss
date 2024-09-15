@@ -856,6 +856,7 @@ input {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  display: none;
   background-color: white;
   width: 405px;
   height: 609px;
