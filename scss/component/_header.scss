@@ -1,18 +1,17 @@
 .div-header-general {
 
     &__link {
-        display: flex;
-        width: 11px;
-        height: 11px;
-        padding: 9px 10px;
-        border-radius: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        fill: #fff;
+        background-color: white;
+        border: 0px;
+    }
+
+    &__link:focus > .icon-Vector-18:focus {
+        color: #2196F3;
     }
 
     .div-header-general__link2 {
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
 
     .h4 {

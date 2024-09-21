@@ -9,6 +9,10 @@ body {
     margin: 0px;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1 {
     @include styliText(44px, uppercase, 900, none, 'color-h1-address', none, none, none, none);
 }

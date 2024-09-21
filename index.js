@@ -1,6 +1,6 @@
 let titleButton = document.querySelector('.title__button');
-let modalWindows = document.querySelector('.modal-windows');
-let divMain2GeneralButton = document.querySelector('.div-main2-general__button');
+let modalWindows = document.querySelector('.div-modal-overlay');
+let divMain2GeneralButton = document.querySelector('.div-header-general__link');
 
 titleButton.addEventListener('click', () => {
     modalWindows.classList.add('active');
