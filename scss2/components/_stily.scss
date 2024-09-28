@@ -75,3 +75,33 @@ button {
         padding: 6px 11px;
     }
 }
+
+.img27png {
+    width: 300px;
+}
+
+.img-size1 {
+    width: 370px;
+    height: 294px;
+}
+
+@media (min-width: 320px) {
+    .img-size1 {
+        width: 450px;
+        height: 294px;
+    }
+}
+
+@media (min-width: 480px) {
+    .img-size1 {
+        width: 354px;
+        height: 294px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-size1 {
+        width: 370px;
+        height: 294px;
+    }
+}

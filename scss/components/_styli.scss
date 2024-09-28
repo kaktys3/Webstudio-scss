@@ -127,3 +127,29 @@ input {
         padding: 18px 55px;
     }
 }
+
+@media (min-width: 320px) {
+    .img-size3 {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (min-width: 480px) {
+    .img-size3 {
+        width: 354px;
+        height: 374px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-size2 {
+        width: 370px;
+        height: 274px;
+    }
+
+    .img-size3 {
+        width: 270px;
+        height: 260px;
+    }
+}
