@@ -15,13 +15,8 @@
 }
 
 .title {
-    @extend %alignment-flex-by-y;
     padding: 200px 0px;
     gap: 30px;
-
-    &__content {
-        @extend %alignment-flex-by-y;
-    }
 
     &__button {
         @extend %standart-alignment-flex;

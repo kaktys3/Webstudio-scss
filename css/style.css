@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-.personnel-user__information2, .personnel-user__information1, .title__content, .title {
+.personnel-user__information2, .personnel-user__information1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@
   justify-content: center;
 }
 
-.personnel-user__information2, .personnel-user__information1, .title, .title__content {
+.personnel-user__information2, .personnel-user__information1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +107,7 @@
   justify-content: center;
 }
 
-.personnel-user__information2, .personnel-user__information1, .title, .title__content {
+.personnel-user__information2, .personnel-user__information1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,7 +169,7 @@
   justify-content: center;
 }
 
-.personnel-user__information2, .personnel-user__information1, .title, .title__content {
+.personnel-user__information2, .personnel-user__information1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,7 +279,7 @@
   justify-content: center;
 }
 
-.title, .title__content, .personnel-user__information1, .personnel-user__information2 {
+.personnel-user__information1, .personnel-user__information2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,7 +321,7 @@
   justify-content: center;
 }
 
-.title, .title__content, .personnel-user__information1, .personnel-user__information2 {
+.personnel-user__information1, .personnel-user__information2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,8 +337,6 @@
 }
 
 .menu {
-  display: flex;
-  align-items: center;
   gap: 276px;
 }
 
@@ -361,7 +359,6 @@
 
 @media (min-width: 481px) {
   .heder-container {
-    display: flex;
     gap: 90px;
   }
   .address {
@@ -371,7 +368,6 @@
   }
   .menu {
     gap: 87px;
-    display: flex;
   }
   .nav {
     gap: 32px;
@@ -383,11 +379,7 @@
 }
 @media (min-width: 1024px) {
   .heder-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 315px;
-    padding: none;
   }
   /* навігаційна система */
   .menu {
@@ -507,7 +499,7 @@
   justify-content: center;
 }
 
-.title, .title__content, .personnel-user__information1, .personnel-user__information2 {
+.personnel-user__information1, .personnel-user__information2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -555,7 +547,7 @@
   justify-content: center;
 }
 
-.title, .title__content, .personnel-user__information1, .personnel-user__information2 {
+.personnel-user__information1, .personnel-user__information2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -636,7 +628,7 @@ footer {
   justify-content: center;
 }
 
-.title, .title__content, .personnel-user__information1, .personnel-user__information2 {
+.personnel-user__information1, .personnel-user__information2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -850,7 +842,7 @@ input {
   justify-content: center;
 }
 
-.title, .title__content, .personnel-user__information1, .personnel-user__information2 {
+.personnel-user__information1, .personnel-user__information2 {
   display: flex;
   flex-direction: column;
   align-items: center;
